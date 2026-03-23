@@ -89,7 +89,7 @@ def processCommand(command):
         return "exit"
     
     elif "thank" in command:
-        speak("Always there for you bro 😎")
+        speak("Welcome! I always there for you")
 
     # List of songs🎶🎶
     elif "list songs" in command:
@@ -146,8 +146,7 @@ def get_news(command):
     try:
         url = f"https://newsapi.org/v2/top-headlines?category={category}&apiKey={newsapi}"
         r = requests.get(url)
-        print("Status Code:", r.status_code)   # 👈 status
-        print("Response:", r.text)             # 👈 ADD THIS
+        # print("Status Code:", r.status_code)   # 👈 status
 
         if r.status_code == 200:  #show successful fetching
             data = r.json()
