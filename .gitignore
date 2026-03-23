@@ -1,0 +1,7 @@
+**pycache**/
+\*.pyc
+.env
+temp.mp3
+API.env
+myenv/
+venv/
