@@ -17,6 +17,7 @@ Nova is a Python-based voice assistant that can perform tasks like opening websi
 * 🧠 Memory system (remembers name & likes)
 * ⚡ Session-based commands (5 commands per activation)
 
+🎥 Demo Video: https://www.linkedin.com/posts/ankit-singh-233a07336_python-ai-machinelearning-activity-7441889276797272064-t9eC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFSCyIcBgCrCisFoXWT9qHj4Sixo3TSEbmY
 ---
 
 ## 📁 Project Structure
