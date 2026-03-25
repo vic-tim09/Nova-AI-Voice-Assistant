@@ -1,34 +1,23 @@
 # Nova-AI-Voice-Assistant
-A Python-based AI voice assistant using SpeechRecognition, gTTS, and News API for automation tasks.
-
 
 # 🤖 Nova AI Voice Assistant
 Nova is a Python-based voice assistant that can perform tasks like opening websites, playing music, fetching news, and remembering user preferences.
 
 ## 🚀 Features
-* 🎙️ Voice Recognition (SpeechRecognition)
-* 🔊 Text-to-Speech (gTTS + pygame)
-* 🌐 Open websites (Google, YouTube, LinkedIn, etc.)
-* 🎵 Play songs from custom music library 
-* 📰 Fetch latest news using News API 
-* 🧠 Memory system (remembers name & likes)
-* ⚡ Session-based commands (5 commands per activation)
+*  Voice Recognition (SpeechRecognition)
+*  Utilizes the speech_recognition library to listen for and recognize voice commands. 
+*  Text-to-Speech (gTTS + pygame)
+*  Activates upon detecting the wake word "Nova"
+*  Converts text to speech using pyttsx3 for local conversion. 
+*  Open websites liske Google, YouTube, LinkedIn, Instagram etc based on voice commands.)
+*  Play songs from custom music library 
+*  Fetch latest news using News API 
+*  Memory system (remembers name & likes)
+*  Session-based commands (5 commands per activation)
 
 🎥 Demo Video: https://www.linkedin.com/posts/ankit-singh-233a07336_python-ai-machinelearning-activity-7441889276797272064-t9eC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFSCyIcBgCrCisFoXWT9qHj4Sixo3TSEbmY
 ---
-• Voice Recognition 
-• Utilizes the speech_recognition library to listen for and recognize voice commands. 
-• Activates upon detecting the wake word "Nova" 
-• Text-to-Speech 
-• Converts text to speech using pyttsx3 for local conversion. 
-• Uses gTTS (Google Text-to-Speech) and pygame for playback. 
-• Web Browsing. 
-• Opens websites like Google, Facebook, YouTube, and LinkedIn based on voice 
-commands. 
-• Music Playback 
-• Interfaces with a musicLibrary module to play songs via web links. 
-• News Fetching 
-• Fetches and reads the latest news headlines using NewsAPI.
+
 ## 📁 Project Structure
 
 ```
