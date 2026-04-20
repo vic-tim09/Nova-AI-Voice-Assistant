@@ -37,7 +37,7 @@ NEWS_API_KEY=your_api_key_here
 
 ## 🧠 How It Works
 
-* Say "Nova" to activate assistant
+* Say "Hello Nova" to activate assistant
 * You can give up to 5 commands per session
 * Example commands:
 

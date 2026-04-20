@@ -5,10 +5,12 @@ import pyttsx3
 import musicLibrary
 import requests
 from gtts import gTTS
-import pygame
 import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide" 
+import pygame
 import time
 
+from chatbot import chat_with_ai
 from memory import set_memory, get_memory
 from dotenv import load_dotenv
 
@@ -98,7 +100,9 @@ def processCommand(command):
 
     # fallback
     else:
-        speak("Command not recognized")
+        # speak("Command not recognized")
+        reply = chat_with_ai(command)
+        speak(reply)
 
 # function deffinition
 def open_google():
@@ -191,7 +195,7 @@ MAX_COMMANDS = 5
 if __name__ == "__main__":
     speak("Novaa active....")
     while nova_active:
-        # Listen for the wake word "Nova"
+        # Listen for the wake word "Hello Nova"
         # obtain audio from the microphone
         r = recognizer
          
@@ -204,7 +208,7 @@ if __name__ == "__main__":
             word = r.recognize_google(audio)
             print("You said:", word)
 
-            wake_words = ["nova","nora","novaa","noah","navo","no","nov","noa","nowa","one"]
+            wake_words = ["nova","nora","novaa","noah","nua","navo","no","nov","noa","nowa","one"]
             if any(w in word.lower() for w in wake_words):
                 speak("Yes")
                 session_active = True
