@@ -9,6 +9,7 @@ import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide" 
 import pygame
 import time
+import re
 
 from chatbot import chat_with_ai
 from memory import set_memory, get_memory
@@ -28,7 +29,17 @@ session_active = False
 engine = pyttsx3.init() 
 pygame.mixer.init()
 
+def clean_text(text):
+    # remove emojis
+    # text = re.sub(r'[^\x00-\x7F]+', '', text)
+
+    # remove special symbols
+    text = re.sub(r'[\*\#\@\$\%\^\&\(\)\[\]\{\}]', '', text)
+
+    return text
+
 def speak(text):
+    text = clean_text(text)   # 🔥 yaha clean kiya
     print(text)
     tts = gTTS(text)       # Convert text to speech audio
     tts.save('temp.mp3')   # Save generated audio as mp3 file
