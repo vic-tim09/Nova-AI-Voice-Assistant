@@ -1,6 +1,6 @@
 # Nova-AI-Voice-Assistant
 
-# 🤖 Nova AI Voice Assistant
+# AI Powered Voice Assistant (Nova 🤖)
 Nova is a Python-based voice assistant that can perform tasks like opening websites, playing music, fetching news, and remembering user preferences.
 
 ## 🚀 Features
@@ -14,26 +14,18 @@ Nova is a Python-based voice assistant that can perform tasks like opening websi
 *  Fetch latest news using News API 
 *  Memory system (remembers name & likes)
 *  Session-based commands (5 commands per activation)
+*  🤖 AI Chatbot Integration (NEW 🔥)
+  → Handles unknown commands intelligently
+  → Gives human-like responses
 
 🎥 Demo Video: https://www.linkedin.com/posts/ankit-singh-233a07336_python-ai-machinelearning-activity-7441889276797272064-t9eC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFSCyIcBgCrCisFoXWT9qHj4Sixo3TSEbmY
 ---
 
-## 📁 Project Structure
+## Environment Variables  
 
-```
-├── main.py
-├── musicLibrary.py
-├── memory.json
-├── requirements.txt
-├── .env
-```
-
-### Add API Key
-
-Create `.env` file and add:
-
-```
-NEWS_API_KEY=your_api_key_here
+Create a file named API.env and add: <br>
+NVIDIA_API_KEY=your_api_key_here <br>
+NEWS_API_KEY=your_news_api_key
 
 ## 🧠 How It Works
 
@@ -67,11 +59,11 @@ NEWS_API_KEY=your_api_key_here
 * News API 📰 – Get real-time news
 * Webbrowser 🌍 – Open websites
 * Python-dotenv 🔐 – Manage environment variables
+* NVIDIA Chat API (Mistral Model)
 * JSON 🧠 – Store user memory (name, likes)
 
 ##  Future Improvements
 
-* ChatGPT integration 🤖
 * GUI (Tkinter or PyQt)
 * Spotify API integration 🎵
 * Continuous listening mode
